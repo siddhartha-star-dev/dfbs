@@ -1,0 +1,53 @@
+insert into seats values(24367,"YES","PQR678");
+
+insert into seats values(65322,"YES","STU901");
+
+insert into seats values(77899,"YES","VWX234");
+
+insert into seats values(12345,"YES","YZA567");
+
+insert into seats values(87879,"YES","BCD890");
+
+insert into seats values(70987,"YES","EFG321");
+
+insert into seats values(76768,"YES","HIJ654");
+
+insert into seats values(67674,"YES","KLM987");
+
+insert into seats values(61165,"YES","NOP210");
+
+insert into seats values(88745,"YES","QRS712");
+
+insert into seats values(66998,"YES","TUV786");
+
+insert into seats values(42069,"YES","WXY324");
+
+insert into seats values(69420,"YES","ZAB777");
+
+insert into seats values(59874,"YES","CDE632");
+
+insert into seats values(97463,"YES","FGH007");
+
+insert into seats values(92817,"YES","IJK137");
+
+insert into seats values(93971,"YES","ABC123");
+
+insert into seats values(22090,"YES","DEF456");
+
+insert into seats values(62014,"YES","GHI789");
+
+insert into seats values(87515,"YES","JKL012");
+
+insert into seats values(91483,"YES","MNO345"); 
+
+insert into seats values(22000,"YES","JIU765");
+
+insert into seats values(94163,"YES","TYU908");
+
+insert into seats values(86000,"YES","FRY654");
+
+insert into seats values(77781,"YES","TUM322");
+
+insert into seats values(13694,"YES","MAI420");
+
+insert into seats values(46394,"YES","MTU105");

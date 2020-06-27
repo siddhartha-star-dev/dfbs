@@ -40,6 +40,7 @@ class Connection:
             logger.error(f'Error: {e}')
             self._con = None
             self._cursor = None
+            self.cursor = None
 
     def execute_query(
             self,
@@ -101,3 +102,11 @@ class Connection:
             except connector.Error as e:
                 logger.error(f"Error: {e}")
                 return False
+
+    def get_table_names(self):
+        self._cursor.execute("SHOW TABLES")
+        result_set = self.cursor.fetchall()
+        list_tables = []
+        for result in result_set:
+            list_tables.append(result[0])
+        return list_tables

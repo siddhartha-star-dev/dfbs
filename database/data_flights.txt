@@ -1,0 +1,53 @@
+insert into flights values("PQR678","Lufthansa Airlines","01:20","16:10","BOM","BER");
+
+insert into flights values("STU901","Air Asia","13:00","16:05","PXL","DEL");
+
+insert into flights values("VWX234","SpiceJet Airlines","22:10","00:30","DEL","CCU");
+
+insert into flights values("YZA567","AirAsia","17:10","19:00","PNQ","DEL");
+
+insert into flights values("BCD890","Lufthansa Airlines","13:10","00:00","HYD","DEL");
+
+insert into flights values("EFG321","Vistara Airlines","19:10","00:00","PAT","HYD");
+
+insert into flights values("HIJ654","IndiGo","15:10","00:00","PNQ","HYD");
+
+insert into flights values("KLM987","Kingfisher Airlines","13:10","15:00","DEL","EWR");
+
+insert into flights values("NOP210","Vistara airlines","02:10","00:00","DEL","IAD");
+
+insert into flights values("QRS712","Etihad","08:40","11:00","DEL","AUH");
+
+insert into flights values("TUV786","Jet Airways","16:10","00:00","PNQ","PAT");
+
+insert into flights values("WXY324","Emirates","18:10","00:00","HYD","CCU");
+
+insert into flights values("ZAB777","British Airways","02:10","00:00","IAD","BOM");
+
+insert into flights values("CDE632","Go Air","19:10","00:00","PAT","BOM");
+
+insert into flights values("FGH007","SpiceJet","07:10","00:00","DEL","EWR");
+
+insert into flights values("IJK137","Lufthansa","19:10","00:00","PAT","CCU");
+
+insert into flights values("ABC123","SpiceJet","19:10","21:15","DEL","CCU");
+
+insert into flights values("DEF456","IndiGo","10:15","13:15","DEL","HYD");
+
+insert into flights values("GHI789","IndiGo","03:35","04:40","HYD","PNQ");
+
+insert into flights values("JKL012","Air India","11:40","13:00","HYD","GOI");
+
+insert into flights values("MNO345","AirAsia","10:30","12:20","BOM","BLR"); 
+
+insert into flights values("JIU765","Lufthansa","19:10","00:00","PAT","CCU");
+
+insert into flights values("TYU908","SpiceJet","19:10","21:15","DEL","NWK");
+
+insert into flights values("FRY654","IndiGo","10:15","13:15","DEL","HYD");
+
+insert into flights values("TUM322","IndiGo","03:35","04:40","HYD","PAT");
+
+insert into flights values("MAI420","Air India","11:40","13:00","DEL","GOI");
+
+insert into flights values("MTU105","AirAsia","10:30","12:20","BOM","PNQ");
