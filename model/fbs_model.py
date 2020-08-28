@@ -23,7 +23,7 @@ class Flights:
             arrival,
             departure,
             source,
-            destination
+            destination,
     ):
         self.flight_id = flight_id
         self.name = name
@@ -40,12 +40,12 @@ class Person:
             name,
             email_id,
             phone_no,
-            aadhar_no
+            person_id
     ):
         self.name = name
         self.email_id = email_id
         self.phone_no = phone_no
-        self.aadhar_no = aadhar_no
+        self.person_id = person_id
 
 
 class Bookings:
@@ -53,7 +53,7 @@ class Bookings:
     def __init__(
             self,
             person_id,
-            seat_id
+            seat_id,
     ):
         self.person_id = person_id
         self.seat_id = seat_id

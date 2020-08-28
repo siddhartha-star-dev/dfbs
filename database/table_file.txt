@@ -1,5 +1,3 @@
-create database flight_booking;
-use flight_booking;
 create table flights(flight_id varchar(10),Name varchar(25) NOT NULL,arrival varchar(30) NOT NULL,departure  varchar(30) NOT NULL,source  varchar(30) NOT NULL,Destination  varchar(30) NOT NULL,PRIMARY KEY(flight_id));
 create table seats(seat_id int(5) NOT NULL,available varchar(5),flight_id varchar(10) NOT NULL,PRIMARY KEY(seat_id));
 alter table seats add foreign key(flight_id) references flights(flight_id);

@@ -5,6 +5,12 @@ from database.connection import Connection
 TABLE_FILE = 'table_file.txt'
 DATA_SEATS = 'data_seats.txt'
 DATA_FLIGHTS = 'data_flights.txt'
+TABLE_NAMES = [
+    'bookings',
+    'flights',
+    'person',
+    'seats'
+]
 
 
 class Initialize:
@@ -24,7 +30,7 @@ class Initialize:
 
     def check_data(
             self,
-            table_names
+            table_names=TABLE_NAMES
     ):
         if not self.connection.cursor:
             return False
@@ -56,3 +62,4 @@ class Initialize:
                 lines = data.readlines()
                 for command in lines:
                     self.connection.execute_query(sql_query=command)
+            return True

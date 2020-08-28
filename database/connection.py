@@ -39,7 +39,7 @@ class Connection:
         except connector.Error as e:
             logger.error(f'Error: {e}')
             self._con = None
-            self._cursor = None
+            self.cursor = None
             self.cursor = None
 
     def execute_query(
@@ -54,12 +54,30 @@ class Connection:
         """
         if self._con:
             try:
-                self._cursor.execute(sql_query)
+                self.cursor.execute(sql_query)
                 self._con.commit()
                 return True
             except connector.Error as e:
                 logger.error(f"Error: {e}")
                 return False
+
+    def execute_fetch_query(
+            self,
+            sql_query
+    ):
+        """
+        Function to execute a select query and return the queryset
+
+        :param sql_query: The select query to execute
+        :return: The result set
+        """
+        if self._con:
+            try:
+                self.cursor.execute(sql_query)
+                return self.cursor.fetchall()
+            except connector.Error as e:
+                logger.error(f"Error: {e}")
+                return None
 
     def execute_query_with_values(
             self,
@@ -75,7 +93,7 @@ class Connection:
         """
         if self._con:
             try:
-                self._cursor.execute(sql_query, values)
+                self.cursor.execute(sql_query, values)
                 self._con.commit()
                 return True
             except connector.Error as e:
@@ -96,7 +114,7 @@ class Connection:
         """
         if self._con:
             try:
-                self._cursor.executemany(sql_query, values)
+                self.cursor.executemany(sql_query, values)
                 self._con.commit()
                 return True
             except connector.Error as e:
@@ -104,7 +122,7 @@ class Connection:
                 return False
 
     def get_table_names(self):
-        self._cursor.execute("SHOW TABLES")
+        self.cursor.execute("SHOW TABLES")
         result_set = self.cursor.fetchall()
         list_tables = []
         for result in result_set:
