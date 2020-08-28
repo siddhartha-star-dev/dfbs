@@ -18,6 +18,7 @@ class DfbsDao:
             host
     ):
         initialize = Initialize(dbname, host, password, user)
+        self.connection = None
         if not initialize.check_data():
             if initialize.create():
                 self.connection = Connection(
@@ -35,6 +36,8 @@ class DfbsDao:
                 password=password,
                 user=user
             )
+        if self.connection is None:
+            raise ValueError("Unable to initialize database")
 
     def create_person(
             self,
@@ -70,8 +73,7 @@ class DfbsDao:
             seat_status = self.connection.execute_query(
                 sql_query=sql_query_seat
             )
-            person_status = self.person_detail(person_object=person_object)
-            if book_status and seat_status and person_status:
+            if book_status and seat_status:
                 return True
             else:
                 return False
