@@ -16,3 +16,13 @@ simulating File Booking System
 - View bookings
 
 # Screenshots: 
+- Connection and welcome
+![welcome and connection](screenshots/1.png)
+
+
+- Searching for flights and making bookings
+![Searching for flights and making bookings](screenshots/2.png)
+
+
+- View bookings
+![view bookings](screenshots/3.png)
