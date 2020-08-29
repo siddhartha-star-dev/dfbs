@@ -152,7 +152,6 @@ class DfbsDao:
                 flight = self.connection.execute_fetch_query(sql_query=get_flight_query)
                 person_query = f"SELECT * FROM person WHERE aadhar_no='{booking[0]}'"
                 person = self.connection.execute_fetch_query(sql_query=person_query)
-                print(person)
                 current_booking = {
                     "person_id": person[0][0],
                     "name": person[0][1],
