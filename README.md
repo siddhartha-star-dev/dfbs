@@ -1,7 +1,7 @@
 # Introduction
 
 I made this project to apply my knowledge of MYSQL and python and make a pseudo application with it, the current project is a command line application for
-simulating File Booking System
+simulating Flight Booking System
 
 # How to run
 - Clone the repository
