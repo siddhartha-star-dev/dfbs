@@ -85,7 +85,6 @@ if __name__ == '__main__':
     ]
 
     answers = prompt(questions, style=custom_style_2)
-    print(answers.get("dbname"))
 
     dbname = answers.get("dbname")
     user_name = answers.get("user_name")
