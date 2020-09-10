@@ -1,5 +1,5 @@
 create table flights(flight_id varchar(10),Name varchar(25) NOT NULL,arrival varchar(30) NOT NULL,departure  varchar(30) NOT NULL,source  varchar(30) NOT NULL,Destination  varchar(30) NOT NULL,PRIMARY KEY(flight_id));
-create table seats(seat_id int(5) NOT NULL,available varchar(5),flight_id varchar(10) NOT NULL,PRIMARY KEY(seat_id));
+create table seats(seat_id int(5) NOT NULL,available tinyint(1),flight_id varchar(10) NOT NULL,PRIMARY KEY(seat_id));
 alter table seats add foreign key(flight_id) references flights(flight_id);
 create table person(person_id varchar(30) NOT NULL,name varchar(30) NOT NULL,email_id varchar(30) NOT NULL,phone_no int(10) NOT NULL,aadhar_no int(14) NOT NULL,PRIMARY KEY(person_id));
 create table bookings(person_id varchar(30) NOT NULL,seat_id int(5) NOT NULL);
