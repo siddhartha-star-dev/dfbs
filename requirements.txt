@@ -11,7 +11,7 @@ prettytable==0.7.2
 prompt-toolkit==1.0.14
 ptyprocess==0.6.0
 pyfiglet==0.8.post1
-Pygments==2.6.1
+Pygments==2.7.4
 PyInquirer==1.0.3
 regex==2020.7.14
 six==1.14.0
